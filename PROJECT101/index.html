@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeLinkr Demo Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/airbnb.css" />
+
+
+
+  <style>
+    
+    /* * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f3f5f7; color: #333; }
+
+  
+    header { background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    nav { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 1em; flex-wrap: wrap; }
+    nav .logo { font-size: 1.5em; font-weight: bold; }
+    nav .menu { list-style: none; display: flex; gap: 1em; flex-wrap: wrap; }
+    nav .menu li a, nav .menu li button { text-decoration: none; background: none; border: none; font: inherit; cursor: pointer; padding: 0.5em 1em; }
+    nav .menu li button:hover, nav .menu li a:hover { background: #e0e4e8; border-radius: 4px; }
+
+    
+    .hero { display: flex; flex-wrap: wrap; gap: 2em; max-width: 1200px; margin: 2em auto; padding: 1em; }
+    .hero-left { flex: 1 1 300px; }
+    .hero-left h1 { font-size: 2em; margin-bottom: 0.5em; }
+    .hero-left p { margin-bottom: 1em; }
+    .features { list-style: none; columns: 2; column-gap: 2em; }
+    .features li { margin-bottom: 0.5em; display: flex; align-items: center; }
+    .features li i.icon { margin-right: 8px; color: #0b2e78; }
+    .hero-right { display: flex; align-items: center; justify-content: center; flex: 1 1 300px; }
+    .hero-right button { padding: 1em 2em; font-size: 1em; background: #0b2e78; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .hero-right button:hover { background: #0a286a; }
+
+  
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); align-items: center; justify-content: center; z-index: 2000; }
+    .modal-content { background: #fff; padding: 2em; border-radius: 8px; width: 90%; max-width: 500px; position: relative; }
+    .modal-content .close { position: absolute; top: 1em; right: 1em; cursor: pointer; font-size: 1.2em; }
+    .modal-content h2 { margin-bottom: 1em; }
+    .modal-content input { display: block; width: 100%; margin-bottom: 1em; padding: 0.75em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px; }
+    .modal-content button { padding: 0.75em 1.5em; font-size: 1em; background: #0b2e78; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    .modal-content button:hover { background: #0a286a; }
+    .modal-content p { margin-top: 1em; font-weight: bold; }
+
+    @media screen and (max-width: 768px) {
+      .hero { flex-direction: column; }
+      nav .menu { flex-direction: column; align-items: flex-start; }
+    } */
+  </style>
+</head>
+<body>
+
+<header>
+  
+  <nav>
+    <img src="images\ChatGPT Image Jun 13, 2025, 08_50_41 PM.png" alt="LifeLinkr Logo" class="footer-logo">
+    <!-- <div class="logo">LIFELINKR</div> -->
+  <nav>
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#why">Why Choose Us</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li><a href="#demo"><button id="scheduleBtn">Schedule Demo</button></a></li>
+  </ul>
+</nav>
+
+
+<!-- <section id="home">...</section>
+<section id="why">...</section>
+<section id="benefits">...</section>
+<section id="faq">...</section>
+<section id="demo">...</section> -->
+
+</header>
+
+
+<section id="home" class="hero">
+  <div class="hero-left">
+    <h1>MANAGE PATIENT DATA WITH IVF SOFTWARE</h1>
+    <p>Boost Your Clinic's Efficiency, Enhance Patient Care and Streamline Clinic Operations</p>
+    
+    
+  <!-- <section class="feature-section"> -->
+   <ul class="features">
+  <li><i class="fas fa-database icon"></i> In‑Built CRM</li>
+  <li><i class="fas fa-sliders-h icon"></i> Custom Fit</li>
+  <li><i class="fas fa-mobile-alt icon"></i> Info on‑the‑go</li>
+  <li><i class="fas fa-chart-line icon"></i> Real‑Time Analytics</li>
+  <li><i class="fas fa-user-md icon"></i> Patient Insight</li>
+  <li><i class="fas fa-link icon"></i> Easy Connect</li>
+  <li><i class="fas fa-exchange-alt icon"></i> Data Transfer</li>
+  <li><i class="fas fa-user-cog icon"></i> Personalized for You</li>
+</ul>
+
+  </div>
+  <div class="hero-right">
+    <button id="heroDemoBtn">Schedule a Free Demo</button>
+  </div>
+</section>
+
+
+<section class="trusted-banner-slider">
+  <h2>Trusted by Many IVF Clinics :</h2>
+  <div class="banner-container">
+    <div class="banner-track">
+      <!-- <img src="images\doctor-consultation.png" alt="Trusted IVF Clinics">
+      <img src="images\clinic.png" alt="Trusted IVF Clinics Clone"> 
+        <img src="images\baby.png" alt="Trusted IVF Clinics">
+      <img src="images\prenatal-care.png" alt="Trusted IVF Clinics Clone">  -->
+
+            <img src="images\first-step-ivf-vikaspuri-delhi-ivf-centres-2b1qz2mm8w.avif" alt="Trusted IVF Clinics">
+      <img src="images\indira-ivf-hospital-pvt-ltd-lajpat-nagar-delhi-ivf-centres-hkdv9ltury.avif" alt="Trusted IVF Clinics Clone"> 
+        <img src="images\Asha-IVF-Fertility-Centre_logo.webp" alt="Trusted IVF Clinics">
+      <img src="images\ivfff.jpg" alt="Trusted IVF Clinics Clone"> 
+      <img src="images\indira-ivf-hospital-pvt-ltd-lajpat-nagar-delhi-ivf-centres-hkdv9ltury.avif" alt="Trusted IVF Clinics Clone"> 
+      <!-- <img src="images/trusted-clinics-banner.png" alt="Trusted IVF Clinics">
+      <img src="images/trusted-clinics-banner.png" alt="Trusted IVF Clinics Clone"> Duplicate for smooth infinite scroll -->
+        <!-- <img src="images\doctor-consultation.png" alt="Trusted IVF Clinics">
+      <img src="images\clinic.png" alt="Trusted IVF Clinics Clone"> 
+        <img src="images\baby.png" alt="Trusted IVF Clinics">
+      <img src="images\prenatal-care.png" alt="Trusted IVF Clinics Clone">  -->
+      <!-- //  we can add more images as needed -->
+        <img src="images\first-step-ivf-vikaspuri-delhi-ivf-centres-2b1qz2mm8w.avif" alt="Trusted IVF Clinics">
+      <img src="images\indira-ivf-hospital-pvt-ltd-lajpat-nagar-delhi-ivf-centres-hkdv9ltury.avif" alt="Trusted IVF Clinics Clone"> 
+        <img src="images\Asha-IVF-Fertility-Centre_logo.webp" alt="Trusted IVF Clinics">
+      <img src="images\ivfff.jpg" alt="Trusted IVF Clinics Clone"> 
+      <img src="images\indira-ivf-hospital-pvt-ltd-lajpat-nagar-delhi-ivf-centres-hkdv9ltury.avif" alt="Trusted IVF Clinics Clone"> 
+      
+       
+    </div>
+  </div>
+</section>
+<section class="clinic-features">
+  <div class="features-grid">
+    <div class="feature-box">
+      <img src="images\cloud.png" alt="Data Protection">
+      <h3>Data Protection</h3>
+      <p>Protect Data Leakage With Strict Data Protection</p>
+    </div>
+    <div class="feature-box">
+      <img src="images\task.png" alt="Task Manager">
+      <h3>Built In Task Manager</h3>
+      <p>Never Miss a Task, Get Notified at Each Approval</p>
+    </div>
+    <div class="feature-box">
+      <img src="images\229115-200.png" alt="Easy Walkthrough">
+      <h3>Easy Walkthrough</h3>
+      <p>Access Patient Info Anytime, From Any Screen</p>
+    </div>
+    <div class="feature-box">
+      <img src="images\customer-journey.png" alt="Patient Journey">
+      <h3>Map Patients Journey</h3>
+      <p>Step Linked Progression Bar to Know Milestones</p>
+    </div>
+    <div class="feature-box">
+      <img src="images\light-bulb.png" alt="One Stop">
+      <h3>One Stop Solution</h3>
+      <p>No Need For Multiple Software, Just Use One</p>
+    </div>
+    <div class="feature-box">
+      <img src="images\integration.png" alt="AI Integration">
+      <h3>AI Integration</h3>
+      <p>TTS and AI Integrated to Reduce Human Error</p>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why-section">
+    
+    <div class="why-left">
+      <h2>Why Choose Us?</h2>
+
+      <div class="why-card">
+        <img src="images\clinic (2).png" alt="Patient Management" />
+        <div class="why-content">
+          <h3>1. Seamless Patient Management</h3>
+          <p>Manage patient records, appointments, and history securely and efficiently. <a href="#">Read more</a></p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <img src="images\download.jpg" alt="IVF Cycle Tracking" />
+        <div class="why-content">
+          <h3>2. Detailed IVF Cycle Tracking</h3>
+          <p>Track each IVF stage with real-time updates and insights. <a href="#">Read more</a></p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <img src="images\payment-gateway.png" alt="Finance Integration" />
+        <div class="why-content">
+          <h3>3. Automated Billing & Finance</h3>
+          <p>Streamline billing with insurance integration in one system. <a href="#">Read more</a></p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <img src="images\microscope.png" alt="Lab Management" />
+        <div class="why-content">
+          <h3>4. Lab Management</h3>
+          <p>Optimize embryo tracking and compliance with lab standards. <a href="#">Read more</a></p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="why-right">
+      <h3>Schedule Software Demo</h3>
+      <input id="demo-calendar" type="text" placeholder="Pick a Date" />
+    </div>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  
+  <script src="script.js"></script>
+
+
+
+
+
+
+
+
+<div id="demoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Schedule a Free Demo</h2>
+    <form id="demoForm">
+      <input type="text" id="fullName" placeholder="Full Name*" required />
+      <input type="email" id="email" placeholder="Email Address*" required />
+      <input type="tel" id="phone" placeholder="Phone Number*" required />
+      <input type="tel" id="whatsapp" placeholder="WhatsApp Number" />
+      <input type="text" id="clinicName" placeholder="Clinic Name*" required />
+      <input type="text" id="country" placeholder="Country*" required />
+      <input type="text" id="appointmentDate" placeholder="Choose Appointment Date*" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+  </div>
+</div>
+
+<section id="benefits" class="benefits-section">
+  <h2>Benefits You Will Gain</h2>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <img src="images\resource-allocation.png" alt="Optimize Operations">
+      <p><strong>Optimize</strong> Operations</p>
+    </div>
+    <div class="benefit-card">
+      <img src="images\crm-customer-relationship-management-business-600nw-2445625747.webp" alt="Leverage CRM for Patient">
+      <p><strong>Leverage CRM</strong> for Patient</p>
+    </div>
+    <div class="benefit-card">
+      <img src="images\simplify.jpg" alt="Simplify Financial Processes">
+      <p><strong>Simplify</strong> Financial Processes</p>
+    </div>
+    <div class="benefit-card">
+      <img src="images\pngtree-enhanced-security-concept-icon-drawing-software-information-vector-png-image_39740692.png" alt="Enhanced Data Security">
+      <p><strong>Enhanced</strong> Data Security</p>
+    </div>
+    <div class="benefit-card">
+      <img src="images\simplify.jpg" alt="Simplify Financial Processes">
+      <p><strong>Simplify</strong> Financial Processes</p>
+    </div>
+    <div class="benefit-card">
+      <img src="images\medicalllll.jpg" alt="Forever Medical Records">
+      <p><strong>Forever</strong> Medical Records</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <h2>FAQs</h2>
+
+  <div class="faq-video">
+    <img src="images\FAQQ.jpg" alt="FAQ Video Thumbnail">
+    <!-- <div class="play-button">&#9658;</div> -->
+  </div>
+
+  <div class="faq-accordion">
+
+    <div class="faq-item active">
+      <button class="faq-question">What features does LifeLinkr software include for clinics?</button>
+      <div class="faq-answer">
+        LifeLinkr includes patient management, appointment scheduling, billing, EHR, and customizable dashboards to streamline clinic operations.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is LifeLinkr software suitable for individual doctors?</button>
+      <div class="faq-answer">
+        Yes, LifeLinkr is designed to cater to both individual practitioners and multi-specialty clinics.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How secure is patient data in LifeLinkr software?</button>
+      <div class="faq-answer">
+        LifeLinkr uses advanced encryption and follows HIPAA-compliant security protocols to protect all patient data.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I customize the LifeLinkr dashboard style?</button>
+      <div class="faq-answer">
+        Yes, users can personalize their dashboards with widgets, themes, and display preferences.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Does LifeLinkr support teleconsultation?</button>
+      <div class="faq-answer">
+        Absolutely! LifeLinkr includes a secure video calling feature for virtual consultations.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is training provided to clinic staff?</button>
+      <div class="faq-answer">
+        Yes, LifeLinkr offers onboarding sessions and 24/7 support for seamless adoption by your staff.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <div class="form-container">
+    <h2>Schedule a Free Demo</h2>
+    <p class="subtitle">Experience Seamless <strong>Healthcare Management</strong> with LifeLinkr</p>
+
+    <form method="POST" action="/submit">
+      <div class="form-grid">
+        <input type="text" name="full_name" placeholder="Full Name*" required>
+        <input type="email" name="email" placeholder="Email Address*" required>
+        <input type="tel" name="phone" placeholder="Phone Number*" required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp Number">
+        <input type="text" name="clinic" placeholder="Clinic Name*" required>
+        <input type="text" name="country" placeholder="Country*" required>
+        <input type="text" name="city" placeholder="City*" required>
+        <input type="number" name="users" placeholder="No. of Users">
+        <select name="using_software" required>
+          <option value="">Currently Using Any Software?*</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <textarea name="message" placeholder="Message*" required></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <label>I agree and accept the <a href="#">Terms & Conditions</a></label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="feature-section">
+  <div class="feature-box">
+    <div class="feature-image">
+      <img src="images\art dashboard.png" alt="ART Dashboard">
+    </div>
+    <div class="feature-text">
+      <h2>Managing ART Made Hassle Free</h2>
+      <ul>
+        <li>Comprehensive and secure platform for managing IVF and reproductive health information.</li>
+        <li>Centralizes patient data, lab records, treatment cycles, and financial information.</li>
+        <li>Designed specifically for fertility clinics, making critical information easily accessible.</li>
+      </ul>
+      <a href="#" class="btn-demo">Schedule Demo →</a>
+    </div>
+  </div>
+
+  <div class="feature-box reverse">
+    <div class="feature-text">
+      <h2>Stay Focused, No More Software Hopping</h2>
+      <ul>
+        <li>Eliminates the need for multiple standalone systems by integrating essential functions into one platform.</li>
+        <li>Includes HR, payroll, accounting, bank reconciliation, and inventory management tools.</li>
+        <li>Comprehensive billing, patient management, pharmacy tracking, and bookkeeping.</li>
+      </ul>
+      <a href="#" class="btn-demo">Schedule Demo →</a>
+    </div>
+    <div class="feature-image">
+      <img src="images\API.jpg" alt="API Dashboard">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-about">
+      <img src="images\ChatGPT Image Jun 13, 2025, 08_50_41 PM.png" alt="LifeLinkr Logo" class="footer-logo">
+      <p>
+        Simplifying IVF clinic operations with cutting-edge IVF management software.<br>
+        Our solutions enhance efficiency, streamline workflows, and deliver actionable insights.<br>
+        Experience seamless integration and data-driven decisions with our innovative tools.
+      </p>
+    </div>
+
+    
+    <div class="footer-contact">
+      <h3>CONNECT</h3>
+      <p><span class="icon">📍</span> 609, Shahpuri Tower, Janakpuri, India</p>
+      <p><span class="icon">📞</span> <a href="tel:+919999999999">+91 9999999999</a></p>
+      <p><span class="icon">📧</span> <a href="mailto:info@lifelinkr.in">info@lifelinkr.in</a></p>
+    </div>
+
+    
+    <div class="footer-callback">
+      <h3>REQUEST FREE CALL BACK</h3>
+      <input type="text" placeholder="Enter Your Name">
+      <input type="tel" placeholder="Enter Your Phone Number">
+      <button>Request call back</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>All Rights Reserved 2024–25 © LifeLinkr | 
+      <a href="#">Privacy Policy</a> | <a href="#">Data Privacy</a> | 
+      <a href="#">User Agreement</a> | <a href="#">Contact Information</a> | 
+      <a href="#">GDPR Compliance</a>
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
